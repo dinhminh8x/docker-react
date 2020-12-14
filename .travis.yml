@@ -1,4 +1,5 @@
-sudo: required
+#language: generic
+#sudo: required
 services:
   - docker
 
@@ -7,3 +8,4 @@ before_install:
 
 script:
   - docker run dinhminh8x/docker-react npm run test -- --coverage
+#- docker run -e CI=true dinhminh8x/docker-react npm run test -- --coverage
